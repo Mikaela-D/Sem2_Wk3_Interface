@@ -75,6 +75,7 @@ public class ProductDB {
             myTV.setPrice(999.99);
             myTV.setScreen_size("60 inches");
             myTV.setManufacture("Samsung TV");
+            p =myTV;
         }
         return p;
     }
