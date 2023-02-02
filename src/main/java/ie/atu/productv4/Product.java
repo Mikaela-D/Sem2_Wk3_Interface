@@ -8,6 +8,9 @@ public class Product {
     private String code;
     private String artist;
     private String label;
+    private String screen_size;
+    private String manufacture;
+
     protected static int count = 0;
 
     public Product(){

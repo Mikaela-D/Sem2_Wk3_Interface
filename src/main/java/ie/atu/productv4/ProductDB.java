@@ -67,7 +67,15 @@ public class ProductDB {
             myMusic.setLabel("Columbia Group");
             myMusic.setArtist("Pink Floyd");
             p = myMusic;
+        } else if(productCode.equalsIgnoreCase("samsung")) {
+            TV myTV = new TV();
+            myTV.setCode(productCode);
+            myTV.setDescription("Latest Samsung TV");
+            myTV.setPrice(999.99);
+            myTV.setScreen_size("60 inches");
+            myTV.setManufacture("Samsung TV");
         }
+
         return p;
     }
 }
