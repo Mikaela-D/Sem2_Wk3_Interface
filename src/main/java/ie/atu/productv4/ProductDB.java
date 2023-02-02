@@ -3,6 +3,7 @@ package ie.atu.productv4;
 import ie.atu.productv4.Book;
 import ie.atu.productv4.Product;
 import ie.atu.productv4.Software;
+import ie.atu.productv4.TV;
 
 public class ProductDB {
     public static Product getProduct(String productCode) {
@@ -75,7 +76,6 @@ public class ProductDB {
             myTV.setScreen_size("60 inches");
             myTV.setManufacture("Samsung TV");
         }
-
         return p;
     }
 }

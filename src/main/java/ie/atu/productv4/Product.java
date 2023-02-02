@@ -56,6 +56,22 @@ public class Product {
         this.label = label;
     }
 
+    public String getScreen_size() {
+        return screen_size;
+    }
+
+    public void setScreen_size(String screen_size) {
+        this.screen_size = screen_size;
+    }
+
+    public String getManufacture() {
+        return manufacture;
+    }
+
+    public void setManufacture(String manufacture) {
+        this.manufacture = manufacture;
+    }
+
     public String getPriceFormatted() {
         NumberFormat currency = NumberFormat.getCurrencyInstance();
         return currency.format(price);
