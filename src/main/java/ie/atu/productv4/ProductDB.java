@@ -1,8 +1,8 @@
 package ie.atu.productv4;
 
-import ie.atu.productv3.Book;
-import ie.atu.productv3.Product;
-import ie.atu.productv3.Software;
+import ie.atu.productv4.Book;
+import ie.atu.productv4.Product;
+import ie.atu.productv4.Software;
 
 public class ProductDB {
     public static Product getProduct(String productCode) {
@@ -59,6 +59,14 @@ public class ProductDB {
             mySoftware.setPrice(54.50);
             mySoftware.setVersion("Oracle 3.0");
             p = mySoftware;
+        } else if(productCode.equalsIgnoreCase("pink")) {
+            Music myMusic = new Music();
+            myMusic.setCode(productCode);
+            myMusic.setDescription("Wish you were here");
+            myMusic.setPrice(8.50);
+            myMusic.setLabel("Columbia Group");
+            myMusic.setArtist("Pink Floyd");
+            p = myMusic;
         }
         return p;
     }

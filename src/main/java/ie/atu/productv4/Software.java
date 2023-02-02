@@ -1,6 +1,6 @@
 package ie.atu.productv4;
 
-import ie.atu.productv3.Product;
+import ie.atu.productv4.Product;
 
 public class Software extends Product {
     private String version;
@@ -8,7 +8,6 @@ public class Software extends Product {
     public Software() {
         super();
         version = "";
-        count++;
     }
 
 

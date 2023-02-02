@@ -1,20 +1,23 @@
 package ie.atu.productv4;
 
+import java.text.NumberFormat;
+
 public class Product {
-    private String price;
+    private double price;
     private String description;
     private String code;
     private String artist;
     private String label;
+    protected static int count = 0;
 
     public Product(){
     }
 
-    public String getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(String price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
@@ -48,5 +51,19 @@ public class Product {
 
     public void setLabel(String label) {
         this.label = label;
+    }
+
+    public String getPriceFormatted() {
+        NumberFormat currency = NumberFormat.getCurrencyInstance();
+        return currency.format(price);
+    }
+
+    @Override
+    public String toString() {
+        return description;
+    }
+
+    public static int getCount() {
+        return count;
     }
 }
