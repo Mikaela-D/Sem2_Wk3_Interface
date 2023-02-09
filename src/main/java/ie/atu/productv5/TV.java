@@ -1,6 +1,6 @@
 package ie.atu.productv5;
 
-import ie.atu.productv4.Product;
+import ie.atu.productv5.Product;
 
 public class TV extends Product {
     private String screen_size;

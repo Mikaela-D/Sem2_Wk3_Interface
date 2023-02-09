@@ -1,9 +1,9 @@
 package ie.atu.productv5;
 
-import ie.atu.productv4.Book;
-import ie.atu.productv4.Music;
-import ie.atu.productv4.Product;
-import ie.atu.productv4.*;
+import ie.atu.productv5.Book;
+import ie.atu.productv5.Music;
+import ie.atu.productv5.Product;
+import ie.atu.productv5.*;
 
 public class ProductDB {
     public static Product getProduct(String productCode) {
@@ -61,7 +61,7 @@ public class ProductDB {
             mySoftware.setVersion("Oracle 3.0");
             p = mySoftware;
         } else if(productCode.equalsIgnoreCase("pink")) {
-            ie.atu.productv4.Music myMusic = new Music();
+            Music myMusic = new Music();
             myMusic.setCode(productCode);
             myMusic.setDescription("Wish you were here");
             myMusic.setPrice(8.50);

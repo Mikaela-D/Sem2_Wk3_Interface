@@ -1,6 +1,6 @@
 package ie.atu.productv5;
 
-import ie.atu.productv4.Product;
+import ie.atu.productv5.Product;
 
 public class Music extends Product {
     private String artist;
