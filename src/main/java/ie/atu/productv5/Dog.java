@@ -5,10 +5,17 @@ public class Dog extends Animals{
     private String shedding;
     private String neutered;
 
+    public Dog() {
+        super();
+        vaccination = "";
+        shedding = "";
+        neutered = "";
+    }
+
     public Dog(String vaccination, String shedding, String neutered) {
-        this.vaccination = "";
-        this.shedding = "";
-        this.neutered = "";
+        this.vaccination = vaccination;
+        this.shedding = shedding;
+        this.neutered = neutered;
     }
 
     public String getVaccination() {

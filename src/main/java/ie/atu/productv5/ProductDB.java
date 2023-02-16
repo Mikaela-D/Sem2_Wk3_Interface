@@ -60,7 +60,7 @@ public class ProductDB {
             mySoftware.setPrice(54.50);
             mySoftware.setVersion("Oracle 3.0");
             p = mySoftware;
-        } else if(productCode.equalsIgnoreCase("pink")) {
+        } else if (productCode.equalsIgnoreCase("pink")) {
             Music myMusic = new Music();
             myMusic.setCode(productCode);
             myMusic.setDescription("Wish you were here");
@@ -68,7 +68,7 @@ public class ProductDB {
             myMusic.setLabel("Columbia Group");
             myMusic.setArtist("Pink Floyd");
             p = myMusic;
-        } else if(productCode.equalsIgnoreCase("samsung")) {
+        } else if (productCode.equalsIgnoreCase("samsung")) {
             TV myTV = new TV();
             myTV.setCode(productCode);
             myTV.setDescription("Latest Samsung TV");
@@ -76,14 +76,26 @@ public class ProductDB {
             myTV.setScreen_size("60 inches");
             myTV.setManufacture("Samsung TV");
             p =myTV;
-        } else if(productCode.equalsIgnoreCase("ed")){
+        } else if (productCode.equalsIgnoreCase("horse")) {
             Horse myHorse = new Horse();
             myHorse.setType(productCode);
             myHorse.setPrice(8.50);
-            myHorse.setHeight(178);
             myHorse.setAge(23);
-            myHorse.setSire("Mary");
+            myHorse.setBreed("Arabian");
+            myHorse.setDam("Mary");
+            myHorse.setSire("Jon");
+            myHorse.setHeight(178);
             p = myHorse;
+        } else if (productCode.equalsIgnoreCase("dog")) {
+            Dog myDog = new Dog();
+            myDog.setType(productCode);
+            myDog.setPrice(5.99);
+            myDog.setAge(5);
+            myDog.setBreed("German");
+            myDog.setVaccination("Yes");
+            myDog.setShedding("No");
+            myDog.setNeutered("Yes");
+            p = myDog;
         }
         return p;
     }
